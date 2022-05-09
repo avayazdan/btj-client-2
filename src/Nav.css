@@ -1,0 +1,30 @@
+.nav-bar {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+.footer {
+  background-color: #3c31dd;
+  background-blend-mode: soft-light;
+}
+
+p.footer {
+  font-weight: bolder;
+  padding: 20px;
+}
