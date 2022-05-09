@@ -59,10 +59,9 @@ function Nav() {
               </br>Email: fighthegoodfight@btj.com<br>
               </br>Address: 777<br></br>
               North Camden Road<br></br>
-              NW1 2DJ</p><br></br>
-              <p>This website was made for educational purposes only.</p>
+              NW1 2DJ<br></br><br></br>
+              This website was made for educational purposes only.</p>
               </div>
-
             </footer>
             {/* </div> */}
         </>
