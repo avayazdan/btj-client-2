@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-// import "../Nav.css"
 import BTJLogo from "./logo1.png"
 import BTJHeader from "./btjheader.png"
 import "../Nav.css"

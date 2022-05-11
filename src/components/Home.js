@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 import "../App.css"
-
+import Homepagegif from "../components/medievalhome.jpg"
 
 <link rel="stylesheet" href="App.css"></link>
 
@@ -10,14 +10,17 @@ function Home() {
     <>
       <div className='starting-container'>
         <div className='heading-banner'></div>
-        <div className='hot'>
-          <h1>Hot this month</h1>
-        </div>
       </div>
       <h2>
         "Man's capacity for justice makes democracy possible, <br></br>
         but man's inclination to injustice makes democracy necessary"
       </h2>
+      <div className='hot'>
+          <h1>Hot this month</h1>
+        </div>
+      <div class='home-photo-container'>
+        <img className="gif" src={Homepagegif} alt="BTJ Logo"></img>
+        </div>
       <div className="all-squares">
           <div className="row">
             <div className="square-1">projecting politics: the grapes of wrath</div>
@@ -28,11 +31,9 @@ function Home() {
               <div className="square-6">a look through Rumi's legacy</div>
             </div>
           </div>
+          
         <section>
         </section>
-        {/* <div class='home-photo-container'>
-
-        </div> */}
       </>
       )
 }
