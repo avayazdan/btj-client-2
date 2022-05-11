@@ -1,10 +1,8 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 // import "../Nav.css"
-// import FacebookLogo from "../assets/facebook.png"
-// import TwitterLogo from "../assets/twitter.png"
-// import InstagramLogo from "../assets/instagram.png"
-// import WalkiesLogo from "../assets/logo1.png"
+import BTJLogo from "./logo1.png"
+import BTJHeader from "./btjheader.png"
 import "../Nav.css"
 
 <link rel="stylesheet" href="Nav.css"></link>
@@ -15,7 +13,8 @@ function Nav() {
         <>
             <header>
                 <nav className="nav-bar">
-                  {/* <img src={} alt="Walkies logo"></img> */}
+                  <img src={BTJHeader} alt="BTJ Header"></img>
+                  <img className="plague-doctor" src={BTJLogo} alt="BTJ Logo"></img>
                     <ul>
                         <li>
                             <Link to="/"> Home</Link>
