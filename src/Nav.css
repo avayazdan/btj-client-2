@@ -19,6 +19,10 @@ a {
   text-transform: uppercase;
 }
 
+.logo-container {
+  display: flex;
+}
+
 img {
   height: 100px;
   width: 480px;

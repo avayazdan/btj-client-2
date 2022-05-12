@@ -12,8 +12,10 @@ function Nav() {
         <>
             <header>
                 <nav className="nav-bar">
-                  <img src={BTJHeader} alt="BTJ Header"></img>
+                  <div className="logo-container">
+                <Link to={'/'}><img src={BTJHeader} onClick="/"alt="BTJ Header"></img></Link>
                   <img className="plague-doctor" src={BTJLogo} alt="BTJ Logo"></img>
+                  </div>
                     <ul>
                         <li>
                             <Link to="/"> Home</Link>
