@@ -7,6 +7,8 @@
 
 /* body */ 
 
+/* homepage */ 
+
 body {
   font-family: mainAppFont;
   background-color: lightgray;
@@ -193,4 +195,27 @@ h2 {
 
 footer {
   margin-top: 120px;
+}
+
+/* about page */ 
+
+.about-h1 {
+  text-transform: uppercase;
+  color: maroon;
+  text-align: end;
+  font-size: 37px;
+  background-color: #a8a7bc;
+  background-blend-mode: soft-light;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-left: 0px;
+}
+
+.about {
+  font-size: 60px;
+
+}
+
+span {
+  color: maroon;
 }

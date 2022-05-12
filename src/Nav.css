@@ -7,11 +7,16 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 1000px;
+  margin-left: 80px;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
+  color: firebrick;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 img {
