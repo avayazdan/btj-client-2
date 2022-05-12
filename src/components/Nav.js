@@ -20,9 +20,9 @@ function Nav() {
                         <li>
                             <Link to="/"> Home</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/categories">Categories</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to="/submit">Submit your work</Link>
                         </li>
@@ -37,6 +37,9 @@ function Nav() {
                         </li>
                         <li>
                             <Link to="/register">Register</Link>
+                        </li>
+                        <li>
+                            <Link to="/article">Articles</Link>
                         </li>
 
                     </ul>

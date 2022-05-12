@@ -8,6 +8,8 @@ import Nav from './components/Nav';
 import Register from './components/Register.js'
 import Submissions from './components/Submissions.js'
 import Submit from './components/Submit.js'
+import Login from './components/Login.js'
+import Article from './components/Articles';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
             <Route path="/submit" element={<Submit />} />
             <Route path="/about" element={<About />} />
             <Route path="/submissions" element={<Submissions />} />
-            <Route path="/login" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register/>}/>
+            <Route path="/article" element={<Article />} />
           </Route>
         </Routes>
       </Router>

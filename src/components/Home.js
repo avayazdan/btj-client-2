@@ -26,7 +26,7 @@ function Home() {
       <div className="all-squares">
           <div className="row">
             {/* {x._id} */}
-          <Link to={'/submissions'} className="square-1"> projecting politics: the grapes of wrath</Link>
+          <Link to={'/submissions/:submissionsId'} id="1" className="square-1"> projecting politics: the grapes of wrath</Link>
           <Link to={'/submissions'} className="square-2">goodnight great britain: an essay by Tom Doubtfire</Link>
           <Link to={'/submissions'} className="square-3">on the importance of Seneca</Link>
           <Link to={'/submissions'} className="square-4">Sitting Bull's fight for indigenous land</Link>
