@@ -213,11 +213,19 @@ footer {
 
 .about {
   font-size: 60px;
+  color: rgb(183, 23, 23);
 
 }
 
 span {
   color: maroon;
+}
+
+.backdrop {
+  position: absolute;
+  z-index:1;
+  width: 1300px;
+  height: 1200px;
 }
 
 /* forms */ 
