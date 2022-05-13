@@ -37,7 +37,8 @@ function Register(props) {
     return (
       <>
         <div>
-          <h1 className='Register'>Registration</h1>
+        <h1 className="about-h1-login">Fight the good fight</h1>
+          <h1 className='Register'>Registration&nbsp;</h1>
         </div>
         <form className="form">
         <div className="username">
@@ -64,13 +65,12 @@ function Register(props) {
         <div className="confirm-password">
           <label className="form__label" for="confirmPassword">Confirm Password </label>
           <input className="form__input" type="password" name="password_repeat" onChange={onChange} value={data.password_repeat} id="confirmPassword" placeholder="Repeat Password" />
-        </div>
-      </form><div className="footer">
           <button type="submit" className="btn-reg" onClick={Registration} >Register</button>
-          <br></br>
-          <h2>{successMessage}</h2>
+          <br></br></div>
+      </form>
+          <h4 className='success-message'>{successMessage}</h4>
           
-        </div></>  
+      </>  
     )
   }
   export default Register  

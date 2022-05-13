@@ -65,6 +65,7 @@ function Submit() {
     return (
         <>
         <div>
+        <h2 className='submit-h2' >"It is better to change an opinion than to persist in a wrong one"</h2>
           <h1 className='Register'>Submit your work</h1>
           {errorMessage && <div className="error">{errorMessage}</div>}
         </div>
@@ -92,11 +93,11 @@ function Submit() {
           <option value="film">Film Studies</option>
           <option value="current">Current Affairs</option>
           </select>
-        </div>
-      </form><div className="footer">
           <button onClick={onSubmit} type="submit" className="btn-reg">Submit</button>
+        </div>
+      </form>
           {successMessage()}
-        </div></>  
+        </>  
     )       
 }
 
