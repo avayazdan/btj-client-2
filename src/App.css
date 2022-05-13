@@ -13,9 +13,12 @@
 
 /* homepage */ 
 
+.logo-container {
+  padding-bottom: 30px;
+}
+
 a {
   flex: 1 1 30%;
-  height: 300px;
   text-transform: uppercase;
   font-size: xx-large;
   text-shadow: 50px, black;
@@ -66,13 +69,13 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 900px;
+  opacity: 0.8;
 }
-/* .square-container-1 {
-  /* display: grid; */
-  /* display: flex;
-  flex-direction: row;
-  grid: repeat(3, 12vw) / auto-flow;
-} */ 
+
+.all-squares:hover {
+  opacity: 1.0;
+}
+
 
 
 .row {
@@ -86,6 +89,16 @@ h2 {
   width: 900px;
   align-content: flex-end;
   margin-top: 0px;
+}
+
+
+.highlight {
+  display: inline;
+  padding: .25em 0;
+  background: maroon;
+  color: #ffffff;
+  box-shadow: .5em 0 0 maroon, -.5em 0 0 maroon;
+  opacity: 0.7;
 }
 
 
@@ -118,7 +131,9 @@ h2 {
   background-image: url(../assets/gow.jpg);
   /* width: 500px;
   height: 300px; */
-  color: maroon;
+  color: rgb(0, 154, 87);
+  text-align: end;
+  text-emphasis-color: white;
 }
 
 
@@ -128,6 +143,7 @@ h2 {
   /* width: 500px;
   height: 300px; */
   color: maroon;
+  text-align: end;
 }
 
 
@@ -137,22 +153,8 @@ h2 {
   /* width: 500px;
   height: 300px; */
   color: maroon;
+  text-align: end;
 }
-
-/* .square-container-2 {
-  /* display: grid; */
-  /* display: flex; */
-  /* flex-direction: column;
-  /* grid: repeat(3, 12vw) / auto-flow; */
-  /* margin-top: 300px; */ 
-  /* height:500px;
-  width: 1000px;
-  margin-right: 4000px;  */
-  /* flex-direction: row;
-  height:300;
-  align-items: flex-start;
-} */
-
 
 .square-4 {
   margin: 10px;
@@ -160,6 +162,7 @@ h2 {
   /* width: 500px;
   height: 300px; */
   color: antiquewhite;
+  text-align: end;
 }
 
 
@@ -178,6 +181,7 @@ h2 {
   /* width: 500px;
   height: 300px; */
   color: antiquewhite;
+  text-align: end;
 }
 
 
@@ -261,19 +265,24 @@ footer {
 .about {
   font-size: 60px;
   color: rgb(183, 23, 23);
+  font-weight: bold;
 
 }
 
 
 span {
   color: maroon;
+  font-weight: bolder;
 }
 
 .backdrop {
   position: absolute;
+  margin-left: 500px;
   z-index:1;
   width: 1300px;
   height: 1200px;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 /* forms */ 
