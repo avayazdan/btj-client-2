@@ -6,34 +6,36 @@ import { Link, useParams } from "react-router-dom";
 
 
 function Article() {
-  const [submissions, setSubmissions] = React.useState(undefined);
+  const [submissions, setSubmissions] = React.useState([''])
   const { submissionsId } = useParams();
 
   React.useEffect(() => {
     console.log("hello ", submissionsId);
+
+
     axios({
-      method: "get",
+      method: 'get',
       url: `http://localhost:8000/submissions/${submissionsId}`,
       // headers: {
       //   Authorization: `Bearer ${localStorage.getItem("token")}`,
       // },
     })
-      .then((response) => {
-        // Console logging the data
-        console.log(response.data);
+    .then((response) => {
+      console.log(`submissions data: `)
+      console.log(response.data);
 
         setSubmissions(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+        console.log("fetching data...")
+    })
+    .catch((error) => {
+      console.log(error);
+    })
   }, [submissionsId]);
   console.log()
   return (
     <>
-
-      {submissions ? submissions.map(x => <div className="articles">
-        <img className="submission-image" alt="article-photograph" src={x.image}></img>
+      {Object.keys(submissions) ? submissions.map((article, x) => <div className="articles">
+        <img className="submission-image" key={x}alt="article-photograph" src={x.image}></img>
         <h1>{x.title}</h1>
         <h2>Category {x.category}</h2>
         <h4>{x.text_field}</h4>

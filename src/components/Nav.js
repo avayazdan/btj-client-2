@@ -38,9 +38,9 @@ function Nav() {
                         <li>
                             <Link to="/register">Register</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/article">Articles</Link>
-                        </li>
+                        </li> */}
 
                     </ul>
                 </nav>

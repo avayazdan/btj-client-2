@@ -9,8 +9,10 @@ import axios from 'axios';
 function Register(props) {  
 
   const [data, setdata] = useState({ username: '', email: '', bio: '', display_picture: '', password: '', password_repeat: ''})
-  const [errorMessage, setErrorMessage] = useState('');
-  const apiUrl = "http://localhost:8000/users/register/";  
+  // const [errorMessage, setErrorMessage] = useState('')
+  const [successMessage, setSuccessMessage] = useState('');
+  const apiUrl = "http://localhost:8000/users/register/"
+
   const Registration = async (e) => {  
     e.preventDefault();  
     // debugger;  
@@ -18,13 +20,14 @@ function Register(props) {
     
     try {
       const { data } = await axios.post(apiUrl, data1) 
+      setSuccessMessage("User created successfully")
       console.log(data)
     } catch(e) {
       console.log(e.response.data)
     }
   }
     const onChange = (e) => {
-      setErrorMessage("Oops! Something went wrong...")
+      // setErrorMessage("Oops! Something went wrong...")
       e.persist();  
       // debugger;  
       setdata({ ...data, [e.target.name]: e.target.value });  
@@ -63,8 +66,10 @@ function Register(props) {
           <input className="form__input" type="password" name="password_repeat" onChange={onChange} value={data.password_repeat} id="confirmPassword" placeholder="Repeat Password" />
         </div>
       </form><div className="footer">
-          <button type="submit" class="btn-reg" onClick={Registration} >Register</button>
-          {errorMessage}
+          <button type="submit" className="btn-reg" onClick={Registration} >Register</button>
+          <br></br>
+          <h2>{successMessage}</h2>
+          
         </div></>  
     )
   }

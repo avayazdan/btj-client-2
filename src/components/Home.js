@@ -51,12 +51,12 @@ function Home() {
         </div>
         <div className="all-squares">
       {submissions.map(x => <div className="row"> 
-      <Link key={x.uniqueId}to={'/submissions/17/'} id="1" className="square-1"> projecting politics: the grapes of wrath</Link>
-          <Link to={`/submissions/${x._id}`} className="square-2">goodnight great britain: an essay by Tom Doubtfire</Link>
-          <Link to={'/submissions'} className="square-3">on the importance of Seneca</Link>
-          <Link to={'/submissions'} className="square-4">Sitting Bull's fight for indigenous land</Link>
-          <Link to={'/submissions'} className="square-5"></Link>
-          <Link to={'/submissions'} className="square-6">a look through Rumi's legacy</Link>
+      <Link key={x.uniqueId}to={'/submissions/19/'} id="1" className="square-1"> projecting politics: the grapes of wrath</Link>
+          <Link to={'/submissions/17/'} className="square-2">goodnight great britain: an essay by Tom Doubtfire</Link>
+          <Link to={'/submissions/20/'} className="square-3">on the importance of Seneca</Link>
+          <Link to={'/submissions/23/'} className="square-4">Sitting Bull's fight for indigenous land</Link>
+          <Link to={'/submissions/16/'} className="square-5"></Link>
+          <Link to={'/submissions/21/'} className="square-6">a look through Rumi's legacy</Link>
       </div>)}
     </div>
       </>
@@ -65,17 +65,4 @@ function Home() {
 
     export default Home
     
-    
-    
-      // <div className="all-squares">
-      //     <div className="row">
-      //       {/* {x._id} */}
-      //     <Link to={'/submissions/:submissionsId'} id="1" className="square-1"> projecting politics: the grapes of wrath</Link>
-      //     <Link to={'/submissions'} className="square-2">goodnight great britain: an essay by Tom Doubtfire</Link>
-      //     <Link to={'/submissions'} className="square-3">on the importance of Seneca</Link>
-      //     <Link to={'/submissions'} className="square-4">Sitting Bull's fight for indigenous land</Link>
-      //     <Link to={'/submissions'} className="square-5"></Link>
-      //     <Link to={'/submissions'} className="square-6">a look through Rumi's legacy</Link>
-      //       </div>
-      //     </div>
-          
+  
