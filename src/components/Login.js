@@ -81,9 +81,9 @@ function Login() {
 
   return (
     <><h1 className="about-h1-login">Fight the good fight</h1><section>
+      <h2 className='login-h1'>Login to your account:</h2>
       <div className="form">
         <div className="form">
-          <h2>Login to your account here: &nbsp;&nbsp;&nbsp;</h2>
           <div className="messages">
             {errorMessage()}
             {successMessage()}
@@ -115,10 +115,11 @@ function Login() {
                 name="password"
               ></input>
               <br></br>
-
+              <div className='button-holder'>
               <button className="button" onClick={handleSubmit} type="submit">
                 Login
               </button>
+              </div>
             </form>
           </section>
         </div>

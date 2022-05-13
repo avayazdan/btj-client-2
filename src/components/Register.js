@@ -65,7 +65,7 @@ function Register(props) {
         <div className="confirm-password">
           <label className="form__label" for="confirmPassword">Confirm Password </label>
           <input className="form__input" type="password" name="password_repeat" onChange={onChange} value={data.password_repeat} id="confirmPassword" placeholder="Repeat Password" />
-          <button type="submit" className="btn-reg" onClick={Registration} >Register</button>
+          <div className='button-holder'><button type="submit" className="btn-reg" onClick={Registration} >Register</button></div>
           <br></br></div>
       </form>
           <h4 className='success-message'>{successMessage}</h4>
