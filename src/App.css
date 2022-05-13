@@ -60,6 +60,7 @@ h2 {
 
 }
 
+
 .h4-success-message {
   background-color: none;
 }
@@ -339,22 +340,18 @@ span {
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	margin-bottom: 30px;
+  resize: both;
+  overflow: scroll;
 }
-.form input[type="text"]:focus,
-.form input[type="date"]:focus,
-.form input[type="password"]:focus,
-.form input[type="email"]:focus,
-.form input[type="number"]:focus,
-.form input[type="search"]:focus,
-.form input[type="time"]:focus,
-.form input[type="url"]:focus,
-.form textarea:focus,
-.form select:focus{
-	background: #d2d9dd;
+
+.form input[name="text"]:focus {
+	resize: both;
+  height:  500px;
 }
+
 .form select{
 	-webkit-appearance: menulist-button;
-	height:35px;
+	height:45px;
 }
 
 .submissions-h2 {

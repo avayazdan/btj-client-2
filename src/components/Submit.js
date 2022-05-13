@@ -76,7 +76,7 @@ function Submit() {
         </div>
         <div className="image">
           <label className="form__label">Text field</label>
-          <input type="text" id="text" name="text" className="form__input" placeholder="Copy and paste or enter your submission here (text)" onChange={onChange} />
+          <input type="text" id="text" name="text" className="text-box" placeholder="" onChange={onChange} />
         </div>
         <div className="image">
           <label className="form__label">Image</label>
