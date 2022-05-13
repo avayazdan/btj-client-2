@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import About from './components/About.js'
-import Categories from './components/Categories.js'
 import Home from './components/Home.js'
 import Nav from './components/Nav';
 import Register from './components/Register.js'
@@ -18,13 +17,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Nav />}>
             <Route index element={<Home />} />
-            <Route path="/categories" element={<Categories />} />
             <Route path="/submit" element={<Submit />} />
             <Route path="/about" element={<About />} />
             <Route path="/submissions" element={<Submissions />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register/>}/>
-            <Route path="/article" element={<Article />} />
+            <Route path="/submissions/:submissionsId" element={<Article />} />
           </Route>
         </Routes>
       </Router>

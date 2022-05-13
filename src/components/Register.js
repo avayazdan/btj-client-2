@@ -7,6 +7,7 @@ import axios from 'axios';
 <link rel="stylesheet" href="App.css"></link>
 
 function Register(props) {  
+
   const [data, setdata] = useState({ username: '', email: '', bio: '', display_picture: '', password: '', password_repeat: ''})
   const [errorMessage, setErrorMessage] = useState('');
   const apiUrl = "http://localhost:8000/users/register/";  
@@ -16,7 +17,7 @@ function Register(props) {
     const data1 = { username: data.username, email: data.email, bio: data.bio, display_picture: data.display_picture, password: data.password, password_repeat: data.password_repeat };  
     
     try {
-      const { data } = await axios.post(apiUrl, data1) // * <-- replace with your endpoint
+      const { data } = await axios.post(apiUrl, data1) 
       console.log(data)
     } catch(e) {
       console.log(e.response.data)
@@ -63,6 +64,7 @@ function Register(props) {
         </div>
       </form><div className="footer">
           <button type="submit" class="btn-reg" onClick={Registration} >Register</button>
+          {errorMessage}
         </div></>  
     )
   }

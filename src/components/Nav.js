@@ -13,7 +13,7 @@ function Nav() {
             <header>
                 <nav className="nav-bar">
                   <div className="logo-container">
-                <Link to={'/'}><img src={BTJHeader} onClick="/"alt="BTJ Header"></img></Link>
+                <Link to={'/'}><img src={BTJHeader} alt="BTJ Header"></img></Link>
                   <img className="plague-doctor" src={BTJLogo} alt="BTJ Logo"></img>
                   </div>
                     <ul>
