@@ -53,8 +53,8 @@ function Login() {
       })
         .then((response) => {
           // console.log(`api key: ${response.data.token}`);
-          localStorage.setItem("token", response.data.token);
-          console.log(`api key: ${localStorage.token}`);
+          // localStorage.setItem(response.data.token);
+          // console.log(`api key: ${localStorage.token}`);
         })
         .catch((error) => {
           console.log(error);

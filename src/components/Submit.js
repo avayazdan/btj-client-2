@@ -6,7 +6,7 @@ import axios from "axios";
 
 <link rel="stylesheet" href="App.css"></link>
 
-const Submit = () => {
+function Submit() {  
 
 
   const [submitted, setSubmitted] = React.useState(false);
@@ -26,7 +26,7 @@ const Submit = () => {
     e.preventDefault();
     try {
       const config = {headers: {Authorization: `Bearer ${localStorage.getItem("token")}`}}
-      const resp = await axios.post('localhost:8000/submissions/', formData, config)
+      const resp = await axios.post('http://localhost:8000/submissions/', formData, config)
       console.log(resp)
       setSubmitted(true);
       setError(false);
@@ -94,7 +94,7 @@ const Submit = () => {
           </select>
         </div>
       </form><div className="footer">
-          <button onSubmit={Submit} type="submit" className="btn-reg">Submit</button>
+          <button onClick={onSubmit} type="submit" className="btn-reg">Submit</button>
           {successMessage()}
         </div></>  
     )       
