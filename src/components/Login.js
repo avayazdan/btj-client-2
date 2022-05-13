@@ -80,12 +80,10 @@ function Login() {
   };
 
   return (
-    <section>
-      <div className="forms-and-photos">
-        {/* <img src={dog2} alt="dog"></img> */}
+    <><h1 className="about-h1-login">Fight the good fight</h1><section>
+      <div className="form">
         <div className="form">
-          <h2>User Login 🐾</h2>
-          {/* <h2>Login to your account here:</h2> */}
+          <h2>Login to your account here: &nbsp;&nbsp;&nbsp;</h2>
           <div className="messages">
             {errorMessage()}
             {successMessage()}
@@ -93,7 +91,7 @@ function Login() {
           <section>
             <form>
               <label className="label" htmlFor="username">
-                username
+                Username:
               </label>
               <br></br>
               <input
@@ -112,7 +110,7 @@ function Login() {
               <input
                 className="input"
                 onChange={handlePassword}
-                type="text"
+                type="password"
                 id="password"
                 name="password"
               ></input>
@@ -126,7 +124,7 @@ function Login() {
         </div>
         {/* <img src={dog1} alt="dog"></img> */}
       </div>
-    </section>
+    </section></>
   );
 }
 

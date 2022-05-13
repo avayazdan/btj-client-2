@@ -226,6 +226,19 @@ footer {
   margin-left: 0px;
 }
 
+.about-h1-login {
+  text-transform: uppercase;
+  color: maroon;
+  text-align: end;
+  font-size: 37px;
+  background-color: #a8a7bc;
+  background-blend-mode: soft-light;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-left: 0px;
+  margin-bottom: 57px;
+}
+
 .about {
   font-size: 60px;
   color: rgb(183, 23, 23);
