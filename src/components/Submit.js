@@ -84,7 +84,6 @@ function Submit() {
         </div>
         <div className="category">
           <label className="form__label" for="displaypic">Category</label>
-          {/* <input type="radio" name="" id="category" className="form__input" placeholder="Choose a category" /> */}
           <select name="category" id="category" onChange={onChange}>
           <option value="art">Art</option>
           <option value="politics">Politics</option>

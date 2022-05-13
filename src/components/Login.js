@@ -123,7 +123,6 @@ function Login() {
             </form>
           </section>
         </div>
-        {/* <img src={dog1} alt="dog"></img> */}
       </div>
     </section></>
   );

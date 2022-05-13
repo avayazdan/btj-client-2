@@ -64,7 +64,7 @@ h2 {
 .h4-success-message {
   background-color: none;
 }
-/* row of squares */ 
+
 
 .all-squares {
   display: flex;
@@ -90,6 +90,7 @@ h2 {
   width: 900px;
   align-content: flex-end;
   margin-top: 0px;
+  padding-left: 20px;
 }
 
 
@@ -125,6 +126,7 @@ h2 {
   font-size: xx-large;
   text-shadow: 50px, black;
   background-size: cover;
+  padding: 5px;
 }
 
 .square-1 {
@@ -221,6 +223,11 @@ h2 {
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.4s ease-in-out;
   margin-top: 240px;
+  box-sizing: content-box;
+  border-width: 8px;
+  border-style: solid;
+  border-image: linear-gradient(to right bottom, maroon, #ff0d00);
+  border-image-slice: 1;
 
 }
 
@@ -281,8 +288,8 @@ span {
   margin-left: 500px;
   z-index:1;
   width: 1300px;
-  height: 1200px;
-  opacity: 0.5;
+  height: 1300px;
+  opacity: 0.1;
   z-index: -1;
 }
 
