@@ -1,7 +1,9 @@
 
 import '../App.css'
 import React, { useState } from 'react'  
-import axios from 'axios';  
+import axios from 'axios';
+import register from "../components/register.png"
+
 // import React from 'react'
 
 <link rel="stylesheet" href="App.css"></link>
@@ -38,8 +40,12 @@ function Register(props) {
       <>
         <div>
         <h1 className="about-h1-login">Fight the good fight</h1>
-          <h1 className='Register'>Registration&nbsp;</h1>
+          {/* <h1 className='Register'>Registration&nbsp;</h1> */}
+          <div className='submit-container'>
+          <img className="submission-header" src={register} alt="register-text"></img>
+          </div>
         </div>
+        <h4 className='success-message'>{successMessage}</h4>
         <form className="form">
         <div className="username">
         {/* <form onSubmit={Registration} class="user">   */}
@@ -68,8 +74,6 @@ function Register(props) {
           <div className='button-holder'><button type="submit" className="btn-reg" onClick={Registration} >Register</button></div>
           <br></br></div>
       </form>
-          <h4 className='success-message'>{successMessage}</h4>
-          
       </>  
     )
   }

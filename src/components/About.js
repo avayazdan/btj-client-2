@@ -8,7 +8,6 @@ function About() {
 
     return (
         <>
-        <div>
         <img className="backdrop" src={Backdrop} alt="plague-doctor-backdrop"></img>
           <h1 className="about-h1">Fight the good fight</h1>
           <p className="about">bite the jaw is a space where anybody and anyone can share their voice with thousands of users.<br></br>
@@ -17,7 +16,6 @@ function About() {
           you can share your work, evidence or insights anonymously or proudly, and one of our investigators, reporters or moderators behind the scenes will work together to get
           your work approved, depending on the nature of your submission. either way, your words are safe with us. <br></br><br></br>
           <span>no need to bite your tongue here.</span></p>
-        </div>
         </>
     )
 }

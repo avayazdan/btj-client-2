@@ -1,6 +1,7 @@
 import React, { useState } from 'react'  
 import axios from 'axios'; 
 import '../App.css'
+import loginpic from "../components/login.png"
 
 <link rel="stylesheet" href="App.css"></link>
 
@@ -81,7 +82,11 @@ function Login() {
 
   return (
     <><h1 className="about-h1-login">Fight the good fight</h1><section>
-      <h2 className='login-h1'>Login to your account:</h2>
+      <div className='about-background'>
+      <div className='submit-container'>
+      <img className='submit-head' src={loginpic} alt="login-text"></img>
+      </div>
+      {/* <h2 className='login-h1'>Login to your account:</h2> */}
       <div className="form">
         <div className="form">
           <div className="messages">
@@ -89,7 +94,7 @@ function Login() {
             {successMessage()}
           </div>
           <section>
-            <form>
+            <form className='login'>
               <label className="label" htmlFor="username">
                 Username:
               </label>
@@ -113,7 +118,7 @@ function Login() {
                 type="password"
                 id="password"
                 name="password"
-              ></input>
+                ></input>
               <br></br>
               <div className='button-holder'>
               <button className="button" onClick={handleSubmit} type="submit">
@@ -122,6 +127,7 @@ function Login() {
               </div>
             </form>
           </section>
+                </div>
         </div>
       </div>
     </section></>

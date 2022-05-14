@@ -36,7 +36,7 @@ function Article() {
     <>
       {Object.keys(submissions) ? submissions.map((article, x) => <div className="articles">
         <img className="submission-image" key={x}alt="article-photograph" src={x.image}></img>
-        <h1>{x.title}</h1>
+        <h2>{x.title}</h2>
         <h2>Category {x.category}</h2>
         <h4>{x.text_field}</h4>
         <h2>Submitted by: {x.submitted_by}</h2>

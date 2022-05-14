@@ -1,4 +1,4 @@
-
+import picture from "../components/submityour.png"
 import '../App.css'
 import React from 'react'
 import axios from "axios";
@@ -66,7 +66,10 @@ function Submit() {
         <>
         <div>
         <h2 className='submit-h2' >"It is better to change an opinion than to persist in a wrong one"</h2>
-          <h1 className='Register'>Submit your work&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <div className='submit-container'>
+        <img className="submit-head" src={picture} alt="submit-your-work-text"></img>
+        </div>
+          {/* <h1 className='Register'>Submit your work&nbsp;&nbsp;&nbsp;&nbsp;</h1> */}
           {errorMessage && <div className="error">{errorMessage}</div>}
         </div>
         <form className="form" onSubmit={{onSubmit}}>
