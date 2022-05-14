@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+## Bite The Jaw (BTJ) - Solo Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed at: 
 
-## Available Scripts
+![btjlogo2](https://user-images.githubusercontent.com/75817925/168427314-5c471431-0d7d-404d-93dd-c6ef1d60bdcb.png)
 
-In the project directory, you can run:
 
-### `npm start`
+## Project Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project was built for project three of General Assembly's Full-Stack Software Engineering course. The project aim was to build our a MERN stack website/application with own API, utilise our growing knowledge of React as well as connecting backend to frontend for the first time. The project specs allowed us to take inspiration from complex websites/apps that use data such as AirBnb or Facebook, and essentially rebuild it in our own way if we desire.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Table of contents 
 
-### `npm test`
+1. Project aims & inspiration 
+2. Planning 
+3. Build
+4. Styling
+5. Challenges and Wins
+6. Future improvements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project aim 
 
-### `npm run build`
+BTJ is a fictional political space where people can express themselves on current affairs, history, philosophy and more. The articles are sorted by categories: Art, Film studies, Philosophy, History, Poltics and Current Affairs. (stretch goal). The articles are accessed and avaliable to view by anyone, however only registered user can submit a submission. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The functionality of BTJ includes:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Retrieve articles from the backend and display them to the user
+- Register a user
+- Login a user
+- Submit an article when you are logged in
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Planning 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![BTJ](https://user-images.githubusercontent.com/75817925/168427372-d741fbea-2520-439f-a41b-7db6279dad83.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Before the project: My planning started with creating a wireframe using Excalidraw, and speaking with my tutors on ideas that would be doable and sufficient for the project requirements.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+During the project: I used Google Docs to keep a daily list of tasks I wanted to/needed to complete day by day, this helped me stay organised and know what to focus on as my next steps, whether that was asking a question from my tutors or implementing a function or styling etc. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![bjt screenshot readme](https://user-images.githubusercontent.com/75817925/168427352-1d77c206-4185-45de-bc05-0b11f03dafe1.png)
 
-## Learn More
+![Untitled](https://user-images.githubusercontent.com/75817925/161281508-a9f4ac23-2d69-4140-9ad3-8ea52729a37d.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Frontend: The project utilises React, HTML and CSS. I didn't use any styling frameworks for this project as I enjoy doing my own styling, however for future, I would like to learn how to use some CSS libaries of frameworks.
 
-### Code Splitting
+Backend: The backend of this project utilises Python, Django and Poetry package manager. I also used Insomnia to test my routes and understand my models/data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Backend 
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Frontend 
+  
+ 
+### Styling
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![btj design outline](https://user-images.githubusercontent.com/75817925/168427385-bea1c2e3-ef06-4c72-9eb5-464be4e4de9f.png)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Challenges & wins
 
-### Deployment
+#### Wins
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Challenges 
+
+ 
+
+### Future improvements or changes
+
+
+
+
+  
+
