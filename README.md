@@ -49,6 +49,9 @@ Backend: The backend of this project utilises Python, Django and Poetry package 
 #### Backend 
 
 
+![helloooo](https://user-images.githubusercontent.com/75817925/168429865-92544cd9-edf7-41eb-b784-6e06ebd6b554.png)
+
+
 #### Frontend 
   
  
