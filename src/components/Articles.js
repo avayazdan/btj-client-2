@@ -42,9 +42,10 @@ function Article() {
         <h3 className="article-text">{submission.text_field}</h3>
         <img className="article-image" alt="article-photograph" src={submission.image}></img>
         </div>
+        <h1>About the author:</h1>
         {/* <h2>Submitted by: {submission.submitted_by}</h2> */}
-          <Link to={`/user/`}> 
-        </Link> 
+          {/* <Link to={`/user/`}> 
+        </Link>  */}
       </div> : <p>Loading...</p>}
 
 
