@@ -13,19 +13,16 @@ function Submit() {
   const [error, setError] = React.useState(false);
   const [formData, setFormData] = React.useState({})
 
-
-  // Handling onChange
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
     // setSubmitted(false);
   }
-
-  // Handling the form submission
+  
   const onSubmit = async (e) => {
     console.log(formData)
     e.preventDefault();
     try {
-      const config = {headers: {Authorization: `Bearer ${localStorage.getItem("token")}`}}
+      const config = {headers: {Authorization: `${localStorage.getItem("access")}`}}
       const resp = await axios.post('http://localhost:8000/submissions/', formData, config)
       console.log(resp)
       setSubmitted(true);
@@ -36,7 +33,6 @@ function Submit() {
     }
   }
 
-  // Showing success message
   const successMessage = () => {
     return (
       <div
@@ -44,12 +40,10 @@ function Submit() {
         style={{
           display: submitted ? '' : 'none',
         }}>
-        <h1>User created </h1>
+        <h1>Your submission has been sent. One of our team will be in touch with you if it is accepted to be an article. Keep fighting the good fight!</h1>
       </div>
     );
   };
-
-  // Showing error message if error is true
   const errorMessage = () => {
     return (
       <div

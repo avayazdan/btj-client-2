@@ -6,7 +6,7 @@ import { Link, useParams } from "react-router-dom";
 
 
 function Article() {
-  const [submissions, setSubmissions] = React.useState([''])
+  const [submission, setSubmission] = React.useState(null)
   const { submissionsId } = useParams();
 
   React.useEffect(() => {
@@ -24,7 +24,7 @@ function Article() {
       console.log(`submissions data: `)
       console.log(response.data);
 
-        setSubmissions(response.data);
+        setSubmission(response.data);
         console.log("fetching data...")
     })
     .catch((error) => {
@@ -34,15 +34,18 @@ function Article() {
   console.log()
   return (
     <>
-      {Object.keys(submissions) ? submissions.map((article, x) => <div className="articles">
-        <img className="submission-image" key={x}alt="article-photograph" src={x.image}></img>
-        <h2>{x.title}</h2>
-        <h2>Category {x.category}</h2>
-        <h4>{x.text_field}</h4>
-        <h2>Submitted by: {x.submitted_by}</h2>
+      {submission ? 
+        <div className="articles">
+        <h2>{submission.title}</h2>
+        <h2 className="article-h2">Category: {submission.category}</h2>
+        <div className="article-container">
+        <h3 className="article-text">{submission.text_field}</h3>
+        <img className="article-image" alt="article-photograph" src={submission.image}></img>
+        </div>
+        {/* <h2>Submitted by: {submission.submitted_by}</h2> */}
           <Link to={`/user/`}> 
         </Link> 
-      </div>) : <p>Loading...</p>}
+      </div> : <p>Loading...</p>}
 
 
     </>
