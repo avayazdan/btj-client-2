@@ -36,11 +36,9 @@ The functionality of BTJ includes:
 
 Before the project: My planning started with creating a wireframe using Excalidraw, and speaking with my tutors on ideas that would be doable and sufficient for the project requirements.
 
-During the project: I used Google Docs to keep a daily list of tasks I wanted to/needed to complete day by day, this helped me stay organised and know what to focus on as my next steps, whether that was asking a question from my tutors or implementing a function or styling etc. 
+During the project: I used Google Docs to keep a daily list of tasks I wanted to/needed to complete day by day, this helped me stay organised and know what to focus on as my next steps, whether that was asking a question from my tutors or implementing a function or styling etc. See example below:
 
 ![bjt screenshot readme](https://user-images.githubusercontent.com/75817925/168427352-1d77c206-4185-45de-bc05-0b11f03dafe1.png)
-
-![Untitled](https://user-images.githubusercontent.com/75817925/161281508-a9f4ac23-2d69-4140-9ad3-8ea52729a37d.png)
 
 ### Build
 
@@ -72,8 +70,11 @@ Backend: The backend of this project utilises Python, Django and Poetry package 
 
 ### Future improvements or changes
 
+Features to implement: 
 
-
-
+- Display author (logged in user who created the article) bio/picture/username
+- Have a categories page, which will have links to the different categories, which will then show a list of articles with the relevant category
+- Add more data into the website
+- Deployment
   
 
