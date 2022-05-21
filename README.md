@@ -29,6 +29,10 @@ The functionality of BTJ includes:
 - Login a user
 - Submit an article when you are logged in
 
+![image](https://user-images.githubusercontent.com/75817925/169652565-53f93d63-5369-4a1d-89f7-8b1119ced927.png)
+![image](https://user-images.githubusercontent.com/75817925/169652576-a36d2e73-20e7-417b-b415-9cd14d90deec.png)
+![image](https://user-images.githubusercontent.com/75817925/169652595-ffad7e89-cd44-4424-ad07-0b5815de435c.png)
+
 
 ### Planning 
 
@@ -44,19 +48,12 @@ During the project: I used Google Docs to keep a daily list of tasks I wanted to
 
 Frontend: The project utilises React, HTML and CSS. I didn't use any styling frameworks for this project as I enjoy doing my own styling, however for future, I would like to learn how to use some CSS libaries of frameworks.
 
-Backend: The backend of this project utilises Python, Django and Poetry package manager. I also used Insomnia to test my routes and understand my models/data.
-
-#### Backend 
-
+Backend: The backend of this project utilises Python, Django and Poetry package manager. I also used Insomnia to test my routes and understand my models/data. I utilised the use of Django Generics and the Django user model, however I adjusted the user model to fit the needs of my project. 
 
 ![helloooo](https://user-images.githubusercontent.com/75817925/168429865-92544cd9-edf7-41eb-b784-6e06ebd6b554.png)
 
 
-#### Frontend 
-  
- 
 ### Styling
-
 
 ![btj design outline](https://user-images.githubusercontent.com/75817925/168427385-bea1c2e3-ef06-4c72-9eb5-464be4e4de9f.png)
 
@@ -65,19 +62,21 @@ Backend: The backend of this project utilises Python, Django and Poetry package 
 
 #### Wins
 
-
+A big win for me was working on my own and pushing myself to be patient with myself and my abilities when it comes to front-end engineering. It was my first time figuiring things out on my own and I found that it was the first time I had pushed myself to overcome some of my imposter syndrome and working independently. 
+Another win was realising how much I have a passion for design/styling and seeing my vision come to life, throughout my SEI course I have felt connected to styling and this final project really helped me see how much my skills have grown and how my passion for design has flourished and has inspired me to maybe take my design skills further.
 
 #### Challenges 
 
- 
+The biggest techical challenge of this project was connecting the Username with the Submitted_by fields in my two models. It was possible to get the User ID however fetching the username was a challenge and I ended up not being able to implement this feature although I spent a lot of time researching and speaking to tutors about it. Another challenge was not knowing/having a gauge of how I was doing in the 2 weeks, and having to deal with the anxiety of the unknown and not having peers to discuss it with to ease the anxiety, however, in the end, this turned out to be okay as I was happy with where I was with my project and how far I got.
 
+ 
 ### Future improvements or changes
 
 Features to implement: 
 
 - Display author (logged in user who created the article) bio/picture/username
-- Have a categories page, which will have links to the different categories, which will then show a list of articles with the relevant category
-- Add more data into the website
+- Have a categories page, which will have links to the different categories, which will then show a list of articles with the relevant category (this was originally intended as a stretch goal)
+- Add more data into the backend to display on the website
 - Deployment
   
 
