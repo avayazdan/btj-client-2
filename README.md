@@ -7,7 +7,7 @@ Deployed at:
 
 ## Project Requirements
 
-This project was built for project three of General Assembly's Full-Stack Software Engineering course. The project aim was to build our a MERN stack website/application with own API, utilise our growing knowledge of React as well as connecting backend to frontend for the first time. The project specs allowed us to take inspiration from complex websites/apps that use data such as AirBnb or Facebook, and essentially rebuild it in our own way if we desire.
+This project was built for project three of General Assembly's Full-Stack Software Engineering course. The project aim was to build a website/application with our own API, utilise our growing knowledge of React and new-found knowledge of Pytho and Django. The project specs allowed us to take inspiration from complex websites/apps that use data such as AirBnb or Facebook, and essentially rebuild it in our own way if we desire, however, I decided to make a project about things I am passionate about and take inspiration from my own interests.
 
 ### Table of contents 
 
@@ -46,7 +46,8 @@ During the project: I used Google Docs to keep a daily list of tasks I wanted to
 
 ### Build
 
-Frontend: The project utilises React, HTML and CSS. I didn't use any styling frameworks for this project as I enjoy doing my own styling, however for future, I would like to learn how to use some CSS libaries of frameworks.
+Frontend: The project utilises React, HTML and CSS. I didn't use any styling frameworks for this project as I enjoy doing my own styling, however for future, I would like to learn how to use some CSS libaries of frameworks. 
+How does it work? The front-end fetches data from the local API that I built in the backend and displays the information on the page, thus the articles are dynamic and not hardcoded, users can also register and login which will send data to the API.
 
 Backend: The backend of this project utilises Python, Django and Poetry package manager. I also used Insomnia to test my routes and understand my models/data. I utilised the use of Django Generics and the Django user model, however I adjusted the user model to fit the needs of my project. 
 
