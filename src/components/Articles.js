@@ -1,37 +1,53 @@
 import React from "react";
 import '../App.css'
 import axios from "axios";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 <link rel="stylesheet" href="App.css"></link>
 
 
 function Article() {
   const [submission, setSubmission] = React.useState(null)
   const { submissionsId } = useParams();
+  const [user, setUser] = React.useState(null)
+  const { usersId } = useParams();
 
   React.useEffect(() => {
     console.log("hello ", submissionsId);
-
-
     axios({
       method: 'get',
-      url: `http://localhost:8000/submissions/${submissionsId}`,
-      // headers: {
-      //   Authorization: `Bearer ${localStorage.getItem("token")}`,
-      // },
+      url: `https://bite-the-jaw.herokuapp.com/submissions/${submissionsId}`, 
     })
     .then((response) => {
       console.log(`submissions data: `)
       console.log(response.data);
 
         setSubmission(response.data);
-        console.log("fetching data...")
+        console.log("fetching submissions data...")
     })
     .catch((error) => {
       console.log(error);
     })
   }, [submissionsId]);
   console.log()
+
+  React.useEffect(() => {
+  axios({
+    method: 'get',
+    url: `https://bite-the-jaw.herokuapp.com/users/`,
+  })
+  .then((response) => {
+    console.log(`users data: `)
+    console.log(response.data);
+
+      setUser(response.data);
+      console.log("fetching user data...")
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+}, [usersId]);
+
+
   return (
     <>
       {submission ? 
@@ -43,9 +59,8 @@ function Article() {
         <img className="article-image" alt="article-photograph" src={submission.image}></img>
         </div>
         <h1>About the author:</h1>
-        {/* <h2>Submitted by: {submission.submitted_by}</h2> */}
-          {/* <Link to={`/user/`}> 
-        </Link>  */}
+        {/* <h2>Submitted by: {user.username}</h2> */}
+        <h3>{user.username}</h3>
       </div> : <p>Loading...</p>}
 
 

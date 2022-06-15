@@ -44,7 +44,7 @@ function Login() {
 
       axios({
         method: "post",
-        url: "http://localhost:8000/api/token/",
+        url: "https://bite-the-jaw.herokuapp.com/api/token/",
         data: {
           username: "PunkPlanet",
           password: "ilovetwitch123",

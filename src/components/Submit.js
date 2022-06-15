@@ -23,7 +23,7 @@ function Submit() {
     e.preventDefault();
     try {
       const config = {headers: {Authorization: `${localStorage.getItem("access")}`}}
-      const resp = await axios.post('http://localhost:8000/submissions/', formData, config)
+      const resp = await axios.post('https://bite-the-jaw.herokuapp.com/submissions/', formData, config)
       console.log(resp)
       setSubmitted(true);
       setError(false);
