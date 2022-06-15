@@ -33,7 +33,7 @@ function Article() {
   React.useEffect(() => {
   axios({
     method: 'get',
-    url: `https://bite-the-jaw.herokuapp.com/users/`,
+    url: `https://bite-the-jaw.herokuapp.com/users/1/`,
   })
   .then((response) => {
     console.log(`users data: `)
@@ -60,7 +60,10 @@ function Article() {
         </div>
         <h1>About the author:</h1>
         {/* <h2>Submitted by: {user.username}</h2> */}
-        <h3>{user.username}</h3>
+        {/* <h3>{user.username}</h3>
+        <h3>{user.bio}</h3>
+        <img className="user-image" alt="article-photograph" src={user.display_picture}></img>
+        <h3>{user.date_joined}</h3> */}
       </div> : <p>Loading...</p>}
 
 

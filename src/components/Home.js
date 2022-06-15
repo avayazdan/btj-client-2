@@ -11,6 +11,8 @@ import Backdrop from "../components/logo2.png"
 function Home() {
 
   const [submissions, setSubmissions] = React.useState([])
+  const [user, setUser] = React.useState([])
+
 
   React.useEffect(() => {
     console.log("running useEffect")
@@ -34,6 +36,27 @@ function Home() {
 })
 }, [])
 
+React.useEffect(() => {
+  console.log("running useEffect")
+
+
+  axios({
+    method: 'get',
+    url: 'https://bite-the-jaw.herokuapp.com/users/'
+    
+
+  })
+.then(response => {
+  console.log(`submissions data: `)
+  console.log(response.data)
+
+  setSubmissions(response.data)
+  console.log("fetching user data...")
+})
+.catch(error => {
+console.log(error)
+})
+}, [])
 
   return (
     <>

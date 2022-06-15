@@ -17,6 +17,10 @@ button {
   
 }
 
+h3 {
+  text-align: center;
+}
+
 button:hover {
   cursor: pointer;
 }

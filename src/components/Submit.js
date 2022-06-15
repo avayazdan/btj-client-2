@@ -63,6 +63,7 @@ function Submit() {
         <div className='submit-container'>
         <img className="submit-head" src={picture} alt="submit-your-work-text"></img>
         </div>
+        <h3>You must register and login before you send a submission.</h3>
           {/* <h1 className='Register'>Submit your work&nbsp;&nbsp;&nbsp;&nbsp;</h1> */}
           {errorMessage && <div className="error">{errorMessage}</div>}
         </div>
